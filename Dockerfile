@@ -11,7 +11,7 @@ RUN apt install -y build-essential
 RUN apt install -y ffmpeg libsm6 libxext6
 
 # get newer version of cmake
-RUN wget https://apt.kitware.com/kitware-archive.sh
+RUN wget https://apt.kitware.76com/kitware-archive.sh
 RUN chmod +x kitware-archive.sh && ./kitware-archive.sh
 
 RUN pip3 install torch==1.6.0

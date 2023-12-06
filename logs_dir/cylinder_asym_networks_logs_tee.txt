@@ -1,0 +1,15 @@
+train_cylinder_asym.py
+Namespace(config_path='config/semantickitti.yaml')
+[480 360  32]
+Traceback (most recent call last):
+  File "train_cylinder_asym.py", line 167, in <module>
+    main(args)
+  File "train_cylinder_asym.py", line 68, in main
+    grid_size=grid_size)
+  File "/remote-home/zhongyiming/Cylinder3D/builder/data_builder.py", line 60, in build
+    num_workers=train_dataloader_config["num_workers"])
+  File "/root/anaconda3/envs/zymcylinder3d/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 268, in __init__
+    sampler = RandomSampler(dataset, generator=generator)
+  File "/root/anaconda3/envs/zymcylinder3d/lib/python3.7/site-packages/torch/utils/data/sampler.py", line 103, in __init__
+    "value, but got num_samples={}".format(self.num_samples))
+ValueError: num_samples should be a positive integer value, but got num_samples=0
